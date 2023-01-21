@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom';
 const Welcome = (): JSX.Element => {
   const date = new Date();
   const dateOptions = {
-    day: 'numeric',
-    weekday: 'long',
-    month: 'long',
-    year: 'numeric',
+    dateStyle: 'long',
+    timeStyle: 'long',
   } as const;
   const today = Intl.DateTimeFormat('en-IN', dateOptions).format(date);
 
